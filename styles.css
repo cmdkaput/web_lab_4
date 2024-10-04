@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-right: 16px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+header .search-btn, .clear-btn {
+    padding: 5px 10px;
+    background-color: #5bc0de;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+main {
+    display: flex;
+    margin-top: 20px;
+}
+
+.sidebar {
+    width: 25%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.sidebar select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.count-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.total-price {
+    margin-top: 20px;
+}
+
+.total-price p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.total-price span {
+    color: #007bff;
+}
+
+/* Style for the ship list container */
+.ship-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+    gap: 20px; /* Spacing between cards */
+    padding: 20px;
+}
+
+/* Style for individual ship cards */
+.ship-card {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.ship-card:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+}
+
+/* Image container inside each ship card */
+.ship-image {
+    margin-bottom: 16px;
+}
+
+/* Image placeholder */
+.ship-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Ship name and details styling */
+.ship-name {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.ship-info {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+}
+
+/* Button container styling */
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-btn, .remove-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.edit-btn {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.remove-btn {
+    background-color: #dc3545;
+    color: white;
+}
